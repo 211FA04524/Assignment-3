@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrashekar - Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6B705C;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .profile-card {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #7C7C7C;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .image-container {
+            flex: 1;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info-container {
+            flex: 1;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-card" onclick="handleCardClick()">
+            <div class="image-container" onclick="handleImageClick(event)">
+                <img src="chandu.jpg" alt="Chandrashekar">
+            </div>
+            <div class="info-container">
+                <h1>CHANDRASHEKAR</h1>
+                <h2>STUDENT</h2>
+                <div class="contact-info">
+                    <p><a href="tel:9845362780">9845362780</a></p>
+                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p><a href="http://chandrashekarreddy.com" target="_blank">chandrashekarreddy.com</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function handleCardClick() {
+            alert("Card clicked!");
+        }
+
+        function handleImageClick(event) {
+            event.stopPropagation();
+            window.open("chandu.jpg", "_blank");
+        }
+    </script>
+</body>
+</html>

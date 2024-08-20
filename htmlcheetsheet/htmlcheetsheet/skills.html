@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Shekar - Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/4207776/pexels-photo-4207776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .section {
+            background-color: #6B705C;
+            color: #FFFFFF;
+            padding: 40px;
+            margin: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #FFFFFF;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="skillsSection">
+        <h2>SKILLS</h2>
+        <p>
+            Through my academic journey and personal projects, I've developed a range of technical skills:
+        </p>
+        <ul>
+            <li>Programming Languages: C, JAVA, PYTHON</li>
+            <li>Web Technologies: HTML, JavaScript, JSP, JDBC</li>
+            <li>MS Office</li>
+            <li>Problem Solving & Decision Making</li>
+            <li>Team Work</li>
+            <li>Effective Communication Skills</li>
+        </ul>
+    </div>
+
+    <script>
+        // Add click event to the section
+        document.getElementById('skillsSection').addEventListener('click', function() {
+            alert('You clicked on the Skills section!');
+        });
+
+        // Animate container on hover using JavaScript
+        const section = document.getElementById('skillsSection');
+        section.addEventListener('mouseenter', function() {
+            section.style.transform = 'translateY(-10px)';
+        });
+        section.addEventListener('mouseleave', function() {
+            section.style.transform = 'translateY(0)';
+        });
+    </script>
+</body>
+</html>

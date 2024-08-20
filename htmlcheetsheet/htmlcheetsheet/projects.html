@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Shekar - Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .section {
+            background-color: #6B705C;
+            color: #FFFFFF;
+            padding: 40px;
+            margin: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #FFFFFF;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="projectSection">
+        <h2>PROJECT</h2>
+        <p>
+            <strong>Title:</strong> Image caption generator using CNN and LSTM<br>
+            <strong>Duration:</strong> 6 months<br>
+            <strong>Guide:</strong> Dr. Ongole Gandhi<br>
+            <strong>Abstract:</strong> This project leverages a Convolutional Neural Network (CNN) to extract image features and a Long Short-Term Memory (LSTM) network to generate descriptive captions. The model integrates visual and textual data, enabling coherent and contextually relevant captioning. Experimental results demonstrate the system's effectiveness in producing accurate and fluent image descriptions.
+        </p>
+    </div>
+
+    <script>
+        // Add a click event to the section
+        document.getElementById('projectSection').addEventListener('click', function() {
+            alert('You clicked on the Project section!');
+        });
+
+        // Animate container on hover using JavaScript
+        const section = document.getElementById('projectSection');
+        section.addEventListener('mouseenter', function() {
+            section.style.transform = 'translateY(-10px)';
+        });
+        section.addEventListener('mouseleave', function() {
+            section.style.transform = 'translateY(0)';
+        });
+    </script>
+</body>
+</html>

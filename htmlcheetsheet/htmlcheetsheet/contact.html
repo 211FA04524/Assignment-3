@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Follow Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6B5B44; /* Similar to the background color in your image */
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .icon-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .icon-container .icon {
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .icon-container .icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>+91 7702517731</p>
+        <p><a href="mailto:gopavarapuchandu143@gmail.com" style="color: #FFFFFF; text-decoration: none;">gopavarapuchandu143@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/chandra-shekar-reddy-b42109293" target="_blank" style="color: #FFFFFF; text-decoration: none;">LinkedIn: Chandra Shekar Reddy</a></p>
+    </div>
+
+    <div class="icon-container">
+        <div class="icon" onclick="navigateLeft()">◀</div> <!-- Left arrow -->
+        <div class="icon" onclick="openSocial('facebook')">F</div> <!-- Social media icon -->
+        <div class="icon" onclick="openSocial('linkedin')">in</div> <!-- Social media icon -->
+        <div class="icon" onclick="navigateRight()">▶</div> <!-- Right arrow -->
+    </div>
+
+    <script>
+        function navigateLeft() {
+            // Add navigation functionality
+            alert('Navigate to the previous page');
+        }
+
+        function navigateRight() {
+            // Add navigation functionality
+            alert('Navigate to the next page');
+        }
+
+        function openSocial(platform) {
+            let url = '';
+            if (platform === 'facebook') {
+                url = 'https://www.facebook.com/chandra.shekar';
+            } else if (platform === 'linkedin') {
+                url = 'https://www.linkedin.com/in/chandra-shekar-reddy-b42109293';
+            }
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
